@@ -1,0 +1,42 @@
+body {
+    font-family: Arial;
+}
+
+.heading {
+    list-style-type: decimal;
+}
+
+.heading-bullet {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.heading-comment {
+    font-weight: 300;
+    font-size: 12px;
+    font-style: italic;
+    margin-left: 30px;
+    padding-bottom: 20px;
+}
+
+.count {
+    list-style-type: lower-latin;
+}
+
+.count-li {
+    margin-bottom: 10px;
+    margin-right: 20px;
+    font-weight: 300 !important;
+    font-size: 0.8em !important;
+}
+
+.question {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.count-error {
+    margin-top: 15px;
+}

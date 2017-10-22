@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="static/style.css" type="text/css">
+
+        <title>News Reporting Tool</title>
+    </head>
+
+    <body>
+        {% block body %}
+        <h1>News Reporting Tool</h1>
+        <ul class="heading">
+            <li class ="heading-bullet"><span class ="question">What are the most popular three articles of all time?</span>
+            <div class ="heading-comment">present this information as a sorted list with the most popular article at the top.</div>
+                <ul class="count">
+                    {% for article in articles %}
+                        <li class="count-li"><span>{{ article[0] }} - {{ article[1] }} views</span></li>
+                    {% endfor %}
+                </ul>
+            </li>
+            <li class="heading-bullet"><span class="question">Who are the most popular article authors of all time?</span>
+            <div class="heading-comment">present this information as a sorted list with the most popular article at the top.</div>
+                <ul class="count">
+                    {% for author in authors %}
+                        <li class="count-li"><span>{{ author[0] }} - {{ author[1] }} views</span></li>
+                    {% endfor %}
+                </ul>
+            </li>
+            <li class="heading-bullet"><span class="question">On which days did more than 1% of requests lead to errors?</span>
+                <ul class="count-error">
+                    {% for http_error in http_errors %}
+                        <li class="count-li"><span>{{ http_error[0] }} - {{ http_error[1] }}% errors</span></li>
+                    {% endfor %}
+                </ul>
+            </li>
+        </ul>
+        {% endblock %}
+        </body>
+</html>
