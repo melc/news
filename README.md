@@ -22,12 +22,16 @@ include:
 - Download virtual box from *https://www.virtualbox.org/wiki/Download_Old_Builds_5_1*
 - Follow the instructions to setup virtualbox
 
-### 2. Install Vagrant
+### 2. Install Git
+- Download git from *https://git-scm.com/downloads*
+- follow the instructions to set up git bash 
+
+### 3. Install Vagrant
 - Download vagrant from *https://www.vagrantup.com/downloads*
 - Follow the instructions to setup vagrant.  *(Note: if the current version is non-compatiable with your OS,
 downgrade the version)*
 
-### 3. Configure Virtual Machine Environment
+### 4. Configure Virtual Machine Environment
 - Download from *https://github.com/udacity/fullstack-nanodegree-vm*
 - Create a new directory news, move newsdata.sql to news, and download source codes from
 *https://github.com/melc/news*
@@ -40,7 +44,7 @@ downgrade the version)*
     git clone https://github.com/melc/news
     ```
 
-### 4. Start the Virtual Machine
+### 5. Start the Virtual Machine
 - Install ubuntu 16.04 LTS
 
     ```
@@ -51,7 +55,7 @@ downgrade the version)*
 
     `vagrant ssh`     *(note: $ will be changed to vagrant@vagrant:~$)*
 
-### 5. Launch the Application
+### 6. Launch the Application
 - Create news database
 
     ```
