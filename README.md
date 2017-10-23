@@ -31,21 +31,20 @@ include:
 - Follow the instructions to setup vagrant.  *(Note: if the current version is non-compatiable with your OS,
 downgrade the version)*
 
-### 4. Configure Virtual Machine Environment
+### 4. Downloard Vagrantfile and Source Codes
 - Download from *https://github.com/udacity/fullstack-nanodegree-vm*
-- Create a new directory news, move newsdata.sql to news, and download source codes from
-*https://github.com/melc/news*
+- Download source codes from *https://github.com/melc/news*
 
     ```
     cd fullstack-nanodegree-vm/vagrant
     mkdir news
-    mv news.sql news
     cd news
     git clone https://github.com/melc/news
     ```
+- Move *newsdata.sql* to *news* folder
 
 ### 5. Start the Virtual Machine
-- Install ubuntu 16.04 LTS
+- Install ubuntu 16.04 LTS on VM
 
     ```
     cd vagrant/
@@ -56,7 +55,7 @@ downgrade the version)*
     `vagrant ssh`     *(note: $ will be changed to vagrant@vagrant:~$)*
 
 ### 6. Launch the Application
-- Create news database
+- Create database *news*
 
     ```
     cd vagrant/news
@@ -65,4 +64,5 @@ downgrade the version)*
 - Launch application.py
 
     `python3.5 application.py`
+
 
