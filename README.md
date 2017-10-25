@@ -27,15 +27,15 @@ include:
 - Follow the instructions to set up git bash 
 
 ### 3. Install Vagrant
-- Download vagrant from *https://www.vagrantup.com/downloads*
-- Follow the instructions to setup vagrant.  *(Note: if the current version is non-compatiable with your OS,
-downgrade the version)*
+- Download the old version of vagrant from *https://www.vagrantup.com/downloads* 
+if the current version is non-compatible with your OS
+- Follow the instructions to setup vagrant.  
 
-### 4. Downloard Vagrantfile and Source Codes
+### 4. Downloard Datafile, Vagrantfile, and Source Codes
 - Download from *https://github.com/udacity/fullstack-nanodegree-vm*
 - Download newsdata.zip from 
 *https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip*
-- Download source codes from *https://github.com/melc/news*
+- Git clone from *https://github.com/melc/news*
 
     ```
     cd fullstack-nanodegree-vm/vagrant
@@ -67,4 +67,4 @@ downgrade the version)*
 
     `python3.5 application.py`
 
-
+- Open browser and type in `localhost:8000`
