@@ -24,7 +24,7 @@ include:
 
 ### 2. Install Git
 - Download git from *https://git-scm.com/downloads*
-- follow the instructions to set up git bash 
+- Follow the instructions to set up git bash 
 
 ### 3. Install Vagrant
 - Download vagrant from *https://www.vagrantup.com/downloads*
@@ -33,6 +33,8 @@ downgrade the version)*
 
 ### 4. Downloard Vagrantfile and Source Codes
 - Download from *https://github.com/udacity/fullstack-nanodegree-vm*
+- Download newsdata.zip from 
+*https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip*
 - Download source codes from *https://github.com/melc/news*
 
     ```
@@ -41,7 +43,7 @@ downgrade the version)*
     cd news
     git clone https://github.com/melc/news
     ```
-- Move *newsdata.sql* to *news* folder
+- Unzip newsdata.zip and move *newsdata.sql* to *news* folder
 
 ### 5. Start the Virtual Machine
 - Install ubuntu 16.04 LTS on VM

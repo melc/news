@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="news@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.4">
+    <root id="1"/>
+    <database id="2" parent="1" name="news">
+      <ObjectId>16409</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>12074</ObjectId>
+    </database>
+    <database id="4" parent="1" name="forum">
+      <ObjectId>16408</ObjectId>
+    </database>
+    <database id="5" parent="1" name="user">
+      <ObjectId>32839</ObjectId>
+    </database>
+    <database id="6" parent="1" name="catalog">
+      <ObjectId>41007</ObjectId>
+    </database>
+    <schema id="7" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2017-10-24.19:37:31.426</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1246</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="8" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="9" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="10" parent="2" name="pg_temp_1">
+      <ObjectId>11215</ObjectId>
+    </schema>
+    <schema id="11" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11216</ObjectId>
+    </schema>
+    <schema id="12" parent="2" name="information_schema">
+      <ObjectId>11526</ObjectId>
+    </schema>
+    <schema id="13" parent="2" name="pg_temp_2">
+      <ObjectId>16489</ObjectId>
+    </schema>
+    <schema id="14" parent="2" name="pg_toast_temp_2">
+      <ObjectId>16490</ObjectId>
+    </schema>
+    <schema id="15" parent="2" name="pg_temp_4">
+      <ObjectId>16497</ObjectId>
+    </schema>
+    <schema id="16" parent="2" name="pg_toast_temp_4">
+      <ObjectId>16498</ObjectId>
+    </schema>
+    <schema id="17" parent="2" name="pg_temp_3">
+      <ObjectId>16505</ObjectId>
+    </schema>
+    <schema id="18" parent="2" name="pg_toast_temp_3">
+      <ObjectId>16506</ObjectId>
+    </schema>
+    <sequence id="19" parent="7" name="articles_id_seq">
+      <ObjectId>32789</ObjectId>
+      <StateNumber>1189</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="20" parent="7" name="authors_id_seq">
+      <ObjectId>32797</ObjectId>
+      <StateNumber>1194</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="21" parent="7" name="catalog_user_id_seq">
+      <ObjectId>32903</ObjectId>
+      <StateNumber>1246</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="22" parent="7" name="category_id_seq">
+      <ObjectId>32841</ObjectId>
+      <StateNumber>1234</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <sequence id="23" parent="7" name="log_id_seq">
+      <ObjectId>32806</ObjectId>
+      <StateNumber>1199</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <table id="24" parent="7" name="articles">
+      <ObjectId>32782</ObjectId>
+      <StateNumber>1220</StateNumber>
+    </table>
+    <table id="25" parent="7" name="authors">
+      <ObjectId>32791</ObjectId>
+      <StateNumber>1220</StateNumber>
+    </table>
+    <table id="26" parent="7" name="catalog_user">
+      <ObjectId>32905</ObjectId>
+      <StateNumber>1246</StateNumber>
+    </table>
+    <table id="27" parent="7" name="category">
+      <ObjectId>32843</ObjectId>
+      <StateNumber>1234</StateNumber>
+    </table>
+    <table id="28" parent="7" name="log">
+      <ObjectId>32799</ObjectId>
+      <StateNumber>1197</StateNumber>
+    </table>
+    <view id="29" parent="7" name="count_err">
+      <ObjectId>32815</ObjectId>
+      <StateNumber>1207</StateNumber>
+    </view>
+    <view id="30" parent="7" name="count_total">
+      <ObjectId>32819</ObjectId>
+      <StateNumber>1209</StateNumber>
+    </view>
+    <view id="31" parent="7" name="popular_articles">
+      <ObjectId>32811</ObjectId>
+      <StateNumber>1205</StateNumber>
+    </view>
+    <column id="32" parent="24" name="author">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1186</StateNumber>
+    </column>
+    <column id="33" parent="24" name="title">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1186</StateNumber>
+    </column>
+    <column id="34" parent="24" name="slug">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1186</StateNumber>
+    </column>
+    <column id="35" parent="24" name="lead">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>1186</StateNumber>
+    </column>
+    <column id="36" parent="24" name="body">
+      <Position>5</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>1186</StateNumber>
+    </column>
+    <column id="37" parent="24" name="time">
+      <Position>6</Position>
+      <DataType>timestamp with time zone|0</DataType>
+      <StateNumber>1186</StateNumber>
+      <DefaultExpression>now()</DefaultExpression>
+    </column>
+    <column id="38" parent="24" name="id">
+      <Position>7</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1201</StateNumber>
+      <SequenceName>articles_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;articles_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <index id="39" parent="24" name="articles_slug_key">
+      <ObjectId>32825</ObjectId>
+      <ColNames>slug</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="40" parent="24" name="articles_pkey">
+      <ObjectId>32823</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="41" parent="24" name="articles_pkey">
+      <ObjectId>32824</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>articles_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="42" parent="24" name="articles_slug_key">
+      <ObjectId>32826</ObjectId>
+      <ColNames>slug</ColNames>
+      <UnderlyingIndexName>articles_slug_key</UnderlyingIndexName>
+    </key>
+    <foreign-key id="43" parent="24" name="articles_author_fkey">
+      <ObjectId>32831</ObjectId>
+      <ColNames>author</ColNames>
+      <RefTableId>32791</RefTableId>
+      <RefColPositions>3</RefColPositions>
+      <RefTableName>authors</RefTableName>
+      <RefKeyName>authors_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="44" parent="25" name="name">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1191</StateNumber>
+    </column>
+    <column id="45" parent="25" name="bio">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>1191</StateNumber>
+    </column>
+    <column id="46" parent="25" name="id">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1202</StateNumber>
+      <SequenceName>authors_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;authors_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <index id="47" parent="25" name="authors_pkey">
+      <ObjectId>32827</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="48" parent="25" name="authors_pkey">
+      <ObjectId>32828</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>authors_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="49" parent="26" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1245</StateNumber>
+      <SequenceName>catalog_user_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;catalog_user_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="50" parent="26" name="email">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1245</StateNumber>
+    </column>
+    <column id="51" parent="26" name="name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1245</StateNumber>
+    </column>
+    <index id="52" parent="26" name="catalog_user_pkey">
+      <ObjectId>32912</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="53" parent="26" name="catalog_user_pkey">
+      <ObjectId>32913</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>catalog_user_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="54" parent="27" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1233</StateNumber>
+      <SequenceName>category_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;category_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="55" parent="27" name="name">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>1233</StateNumber>
+    </column>
+    <index id="56" parent="27" name="category_pkey">
+      <ObjectId>32850</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="57" parent="27" name="category_pkey">
+      <ObjectId>32851</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>category_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="58" parent="28" name="path">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>1196</StateNumber>
+    </column>
+    <column id="59" parent="28" name="ip">
+      <Position>2</Position>
+      <DataType>inet|0</DataType>
+      <StateNumber>1196</StateNumber>
+    </column>
+    <column id="60" parent="28" name="method">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>1196</StateNumber>
+    </column>
+    <column id="61" parent="28" name="status">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>1196</StateNumber>
+    </column>
+    <column id="62" parent="28" name="time">
+      <Position>5</Position>
+      <DataType>timestamp with time zone|0</DataType>
+      <StateNumber>1196</StateNumber>
+      <DefaultExpression>now()</DefaultExpression>
+    </column>
+    <column id="63" parent="28" name="id">
+      <Position>6</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1203</StateNumber>
+      <SequenceName>log_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;log_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <index id="64" parent="28" name="log_pkey">
+      <ObjectId>32829</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="65" parent="28" name="log_pkey">
+      <ObjectId>32830</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>log_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="66" parent="29" name="day">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>1206</StateNumber>
+    </column>
+    <column id="67" parent="29" name="count">
+      <Position>2</Position>
+      <DataType>bigint|0</DataType>
+      <StateNumber>1206</StateNumber>
+    </column>
+    <column id="68" parent="30" name="day">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>1208</StateNumber>
+    </column>
+    <column id="69" parent="30" name="count">
+      <Position>2</Position>
+      <DataType>bigint|0</DataType>
+      <StateNumber>1208</StateNumber>
+    </column>
+    <column id="70" parent="31" name="log_slug">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>1204</StateNumber>
+    </column>
+    <column id="71" parent="31" name="count">
+      <Position>2</Position>
+      <DataType>bigint|0</DataType>
+      <StateNumber>1204</StateNumber>
+    </column>
+  </database-model>
+</dataSource>
