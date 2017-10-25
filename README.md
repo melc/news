@@ -31,8 +31,8 @@ include:
 if the current version is non-compatible with your OS
 - Follow the instructions to setup vagrant.  
 
-### 4. Downloard Datafile, Vagrantfile, and Source Codes
-- Download from *https://github.com/udacity/fullstack-nanodegree-vm*
+### 4. Download Datafile, Vagrantfile, and Source Codes
+- Download vagrantfile from *https://github.com/udacity/fullstack-nanodegree-vm*
 - Download newsdata.zip from 
 *https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip*
 - Git clone from *https://github.com/melc/news*
@@ -67,4 +67,4 @@ if the current version is non-compatible with your OS
 
     `python3.5 application.py`
 
-- Open browser and type in `localhost:8000`
+- Open browser and type in `localhost:8000` 
